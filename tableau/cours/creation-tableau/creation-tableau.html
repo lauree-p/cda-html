@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours : Les tableaux, Introduction</title>
+</head>
+
+<body>
+    <h1>Cours : Les tableaux</h1>
+
+    <h2>2. La création d’un tableau</h2>
+    <p>
+        Un tableau (<code>&lt;table&gt;</code>) comporte des lignes <code>&lt;tr&gt;</code>.<br>
+        Ces lignes contiennent des cellules <code>&lt;td&gt;</code>.<br>
+        L’agencement de ces différentes balises pour afficher un tableau suit une logique que l’exemple
+        suivant nous permettra d’illustrer.<br>
+    </p>
+    <pre>
+        <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+&lt;head&gt;
+    &lt;title&gt;Html&lt;/title&gt;
+    &lt;meta charset="UTF-8"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;td&gt;
+                1
+            &lt;/td&gt;
+            &lt;td&gt;
+                2
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;
+            3
+            &lt;/td&gt;
+            &lt;td&gt;
+            4
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </code>
+    </pre>
+
+    <p>Résultat :</p>
+
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+
+    <p>Le tableau en HTML se construit ainsi :<br>
+        <ul>
+            <li>On déclare que l’on ouvre un tableau avec la balise <code>&lt;table&gt;</code>.</li>
+            <li>Ce tableau comporte une première ligne introduite par la balise <code>&lt;tr&gt;</code>.</li>
+            <li>Cette ligne comporte une première cellule que l’on ouvre avec la balise <code>&lt;td&gt;</code>.</li>
+            <li>Soit 1 comme unique contenu de cette cellule.</li>
+            <li>Fermeture de cette première cellule <code>&lt;/td&gt;</code>.</li>
+            <li>Passons à la seconde cellule <code>&lt;td&gt;</code> 2 <code>&lt;/td&gt;</code>.</li>
+            <li>Fin de la premiére ligne donc <code>&lt;/tr&gt;</code></li>
+            <li>Vient la ligne suivante soit à nouveau <code>&lt;tr&gt;</code>.</li>
+            <li>Cette ligne contient les cellules <code>&lt;td&gt;</code> 3
+                <code>&lt;/td&gt;</code><code>&lt;td&gt;</code> 4 <code>&lt;/td&gt;</code>.</li>
+            <li>Fin de la seconde ligne <code>&lt;/tr&gt;</code></li>
+            <li>Et enfin la balise de fermeture du tableau <code>&lt;/table&gt;</code>.</li>
+        </ul>
+    </p>
+    <p>
+        La balise <code>&lt;tabble&gt;</code> ne comporte pas d'attributs en HTML !
+    </p>
+
+    <nav>
+        <h3>Table des matières</h3>
+
+        <ol>
+            <li><a href="">Introduction</a></li>
+            <li><a href="">La création d'un tableau</a>
+                <ol>
+                    <li><a href="">La largeur du tableau</a></li>
+                    <li><a href="">Les bordures du tableau</a></li>
+                    <li><a href="">L’alignement des cellules du tableau</a></li>
+                </ol>
+            </li>
+            <li><a href="">Les cellules de tableaux</a>
+                <ol>
+                    <li><a href="">La largeur des cellules</a></li>
+                    <li><a href="">L’alignement horizontal</a></li>
+                    <li><a href="">L’alignement vertical</a></li>
+                    <li><a href="">L’arrière-plan de couleur</a></li>
+                </ol>
+            </li>
+
+            <li><a href="">La fusion des cellules</a>
+                <ol>
+                    <li><a href="">La fusion de colonnes</a></li>
+                    <li><a href="">La fusion de lignes</a></li>
+                </ol>
+            </li>
+            <li><a href="">Les cellules d’en-tête</a></li>
+            <li><a href="">La légende d’un tableau</a></li>
+            <li><a href="">Le groupement de colonnes</a></li>
+            <li><a href="">La structuration d’un tableau</a></li>
+        </ol>
+    </nav>
+
+</body>
+
+</html>
