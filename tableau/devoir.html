@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devoir Tableau</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            padding: 1.5em;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: -.3px;
+        }
+
+        table {
+            border: lightgray 2px solid;
+            width: 670px;
+            border-collapse: collapse;
+            line-height: 1.5;
+        }
+
+        caption {
+            margin-bottom: 1.2em;
+            font-weight: 600;
+        }
+
+        th {
+            border: lightgray 2px solid;
+            text-align: center;
+            font-weight: inherit;
+            text-align: left;
+            min-height: 350px;
+            padding-left: 8px;
+            font-size: .9em;
+
+        }
+
+        td {
+            border: lightgray 2px solid;
+        }
+
+        thead tr {
+            border-collapse: collapse;
+        }
+
+        thead td {
+            text-align: center;
+            vertical-align: top;
+            font-weight: 700;
+            font-size: .9em;
+            padding: 0px 4px 4px;
+        }
+
+        thead td:nth-child(odd) {
+            font-size: .7em;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: rgb(255, 255, 255);
+        }
+
+        tbody tr {
+            font-size: .8em;
+            text-align: center;
+        }
+
+        tbody td {
+            font-size: .9em;
+            text-align: inherit;
+            padding: 10px 0px 0px;
+        }
+
+        tbody td:nth-child(2),
+        tbody tr td:nth-child(4) {
+            text-align: left;
+            padding: 15px 4px 2px;
+            font-size: .9em;
+        }
+
+        colgroup.left {
+            background-color: #ccffcc;
+        }
+
+        colgroup.right {
+            background-color: #ffff99;
+        }
+    </style>
+
+    <table>
+        <caption>Vue synoptique de l'emploi-type</caption>
+        <thead>
+            <tr>
+                <td>N°<br>Fiche<br>AT</td>
+                <td colspan="2">Activités types</td>
+                <td>N°<br>Fiche<br>CP</td>
+                <td colspan="2">Compétences professionnelles</td>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <!-- 1 -->
+            <colgroup class="left" span="2"></colgroup>
+            <colgroup class="right" span="3"></colgroup>
+            <tr>
+                <td rowspan="9">1</td>
+                <th colspan="2" rowspan="9">Concevoir et développer des composants d'interface utilisateur en intégrant
+                    les recommandations de sécurité</th>
+                <td>1</td>
+                <td colspan="2">Maquetter une application</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td colspan="2"></td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Développer une interface utilisateur de type desktop</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Développer des composants d'accés aux données</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Développer la partie front-end d'une interface utilisateur web</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Développer la partie back-end d'une interface utilisateur web</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- 2 -->
+
+            <tr>
+                <td rowspan="5">2</td>
+                <th colspan="2" rowspan="5">Concevoir et développer la persistance des données en intégrant les
+                    recommandations de sécurité</th>
+                <td>6</td>
+                <td colspan="2">Concevoir une base de données</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Mettre en place une base de données</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Développer des composants dans le language d'une base de données</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- 3 -->
+
+            <tr>
+                <td rowspan="13">3</td>
+                <th colspan="2" rowspan="13">Concevoir et développer une application multicouche répartie en intégrant
+                    les recommandations de sécurité</th>
+                <td>9</td>
+                <td colspan="2">Collaborer à la gestion d'un projet informatique et à l'organisation de l'environnement
+                    de développement</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Convevoir une application</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Développer des composants métier</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Construire une application organisée en couches</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Développer une application mobile</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Préparer et exécuter les plans de tests d'une application</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Préparer et exécuter le déploiement d'une application</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>
