@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devoir Tableau</title>
 </head>
+
 <body>
 
     <style>
+        body {
+            display: flex;
+            justify-content: center;
+            padding: 1.5em;
+        }
+
         table {
             border: lightgray 2px solid;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: lightgray 2px solid;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        thead tr td {
+            font-weight: 600;
+            font-size: .8em;
         }
     </style>
 
@@ -17,12 +38,39 @@
         <thead>
             <tr>
                 <td>N°<br>Fiche<br>AT</td>
-                <td>Activités types</td>
+                <td colspan="2">Activités types</td>
                 <td>N°<br>Fiche<br>CP</td>
-                <td>Compétences professionnelles</td>
+                <td colspan="2">Compétences professionnelles</td>
             </tr>
         </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="5">1</td>
+                <td colspan="2" rowspan="5">Concevoir et développer des composants d'interface utilisateur en intégrant les recommandations de sécurité</td>
+                <td>1</td>
+                <td colspan="2">Maquetter une application</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Concevoir et développer des composants d'interface utilisateur en intégrant les recommandations de sécurité</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Concevoir et développer des composants d'interface utilisateur en intégrant les recommandations de sécurité</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Concevoir et développer des composants d'interface utilisateur en intégrant les recommandations de sécurité</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Concevoir et développer des composants d'interface utilisateur en intégrant les recommandations de sécurité</td>
+            </tr>
+        </tbody>
     </table>
-    
+
 </body>
+
 </html>
