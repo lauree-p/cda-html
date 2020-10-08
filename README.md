@@ -1,5 +1,5 @@
 # CDA-Java 
-![coursJava](https://raw.githubusercontent.com/lauree-p/cda-html/master/assets/coursHTML.png)
+![coursJava](https://raw.githubusercontent.com/lauree-p/cda-html/main/assets/coursHTML.png)
 
 https://school.needemand.com/school/course/view.php?id=107
 
