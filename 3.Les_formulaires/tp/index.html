@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP</title>
+</head>
+
+<body>
+
+    <h1>Exo 1 : état civil</h1>
+
+    <form>
+        <label for="sexe">Sexe:</label>
+        <input type="radio" name="sexe">Masculin
+        <input type="radio" name="sexe">Féminin
+        <br>
+        <label for="name">Nom:</label>
+        <input type="text" name="name">
+        <br>
+        <label for="firstname">Prénom:</label>
+        <input type="text" name="firstname">
+        <br>
+        <label for="pseudo">Pseudo:</label>
+        <input type="text" name="pseudo">
+        <br>
+        <label for="pseudo">Age:</label>
+        <select name="age">
+            <option selected style="background-color: grey;"></option>
+            <option>Moins de 20 ans</option>
+            <option>De 20 à 40 ans</option>
+            <option>De 40 à 60 ans</option>
+            <option>Plus de 60 ans</option>
+        </select>
+        <br>
+        <label for="password">Mot de passe:</label>
+        <input type="password" name="firstname">
+        <br>
+        <label for="textarea">Commentaires</label>
+        <textarea rows="5" cols="16"></textarea>
+        <br>
+        <label for="pays">Pays</label>
+        <select name="pays" size="2" multiple>
+            <option value="France">France</option>
+            <option value="Espagne">Espagne</option>
+        </select>
+        <label for="pays">Souhaitez vous être contacté par email</label><input type="radio" name="contactMail">oui<input
+            type="radio" name="contactMail">non
+        <br>
+        <input type="submit" value="Validez">
+    </form>
+
+    <h1>Exo 2</h1>
+
+    <form>
+        <fieldset style="width: max-content;">
+            <legend>Client</legend>
+            <label for="name&firstname">Nom et prénom</label>
+            <input type="input" name="name&firstname" placeholder="Nom et prénom" readonly>
+            <br>
+            <label for="adress">Adresse</label>
+            <input type="input" name="adress">
+            <br>
+            <label for="cp" pattern="[0-5]">Code Postal:</label>
+            <input type="input" name="cp">
+            <br>
+            <label for="pays">Pays:</label>
+            <input type="input" name="pays" value="France">
+        </fieldset>
+    </form>
+    <br>
+    <style>
+        .slider::-webkit-slider-thumb {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+        }
+
+        .slider {
+            -webkit-appearance: none;
+            background: #8a8a8a;
+            align-self: center;
+            height: 4px;
+            border-radius: 50px;
+        }
+
+        .slider::-moz-range-thumb {
+            width: 15px;
+            height: 15px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+    </style>
+    <form>
+        <fieldset style="width: max-content;">
+            <label for="model">Modèle:</label>
+            <input type="input" name="modele" value="Road 66">
+            <br>
+            <label for="size">Taille:</label>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" name="size">
+            <p>S M L XL</p>
+            <br>
+            <label for="quantity">Quantité:</label>
+            <select name="quantity" style="width: 130px;">
+                <option selected>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </fieldset>
+        <br>
+        <input type="submit" value="Commander">
+        <input type="submit" value="Recommencer">
+    </form>
+
+    <h1>Exo 3</h1>
+
+    <form>
+        <label for="name">Nom :</label>
+        <input type="input" name="name">
+        <br>
+        <label for="firstname">Prénom :</label>
+        <input type="input" name="firstname">
+        <br>
+        <label for="mail">E-mail :</label>
+        <input type="email" name="mail">
+        <br>
+        <input type="radio"> masculin
+        <input type="radio"> féminin
+        <br>
+        <input type="file" id="docpicker"
+            accept=".jpeg,.png">
+        <br>
+        <select name="country">
+            <option selected>FRANCE</option>
+            <option>ANGLETERRE</option>
+            <option>ALLEMAGNE</option>
+            <option>ITALIE</option>
+            <option>SUISSE</option>
+            <option>ESPAGNE</option>
+        </select>
+        <br>
+        <select name="languages" multiple>
+            <option>français</option>
+            <option>anglais</option>
+            <option>allemand</option>
+            <option>italien</option>
+            <option>espagnol</option>
+        </select>
+        <br>
+        <input type="checkbox"> Plombier
+        <input type="checkbox"> Electricien
+        <input type="checkbox"> Maçon
+        <input type="checkbox"> Carreleur
+        <input type="checkbox"> Menuisier
+        <input type="checkbox"> Couvreur
+    </form>
+
+    <h1>Exo 4</h1>
+
+    <form>
+        <label for="email">E-mail : </label>
+        <input type="email" name="email" pattern="[A-Za-z0-9]+@needemand.com" required>
+        <br>
+        <label for="password">Mot de passe :</label>
+        <input type="password" name="password" minlength="6" pattern="\d+{6,8}" required>
+        <br>
+        
+        <input type="submit" value="Envoyer">
+        <input type="submit" value="Effacer">
+
+
+    </form>
+
+</body>
+
+</html>

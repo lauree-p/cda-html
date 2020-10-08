@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
+
 <body>
-    
+
+    <section class="container-fluid text-center bg-warning p-4">
+        <h1>Les formulaires</h1>
+    </section>
+
+    <section class="container mt-4 p-4">
+
+        <h2>&lt;Form&gt;</h2>
+        <br>
+
+        <form name="sign_in" action="" method="GET">
+            <label for="name">Nom : </label>
+            <input type="text" name="name" size="" maxlength="" value="" placeholder="Entrer votre nom" autofocus>
+            <br><br>
+            <label for="sexe"> Sexe :</label>
+            <input type="radio" name="sexe"> Masculin
+            <input type="radio" name="sexe"> Féminin
+
+            <br>
+            <p>Votre navigateur préféré : <select>
+                    <option value="" selected disabled style="background-color: grey;">Choose here</option>
+                    <option value="1">Edge</option>
+                    <option value="2">Firefox</option>
+                    <option value="3">Safari</option>
+                    <option value="4">Opera</option>
+                    <option value="5">Google Chrome</option>
+                </select></p>
+            <br>
+            <p>Commentaire : </p>
+            <textarea rows="5" cols="35" name="textarea"></textarea>
+            <br><br>
+            <label for="name"> Pizzas :
+                <br>
+                <input type="checkbox" name="n1" checked> Mozarella
+                <br>
+                <input type="checkbox" name="n2"> Jambon
+                <br>
+                <input type="checkbox" name="n3"> Sauce tomate
+                <br>
+                <input type="checkbox" name="n4"> Poivrons
+                <br>
+                <input type="checkbox" name="n5"> Champignons
+                <br>
+                <input type="checkbox" name="n6"> Olives noires
+                <br>
+                <input type="checkbox" name="n7"> Sauce piquante
+            </label>
+            <br><br>
+            <input type="submit" value="Valider" id="submit">
+        </form>
+
+    </section>
+
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+</script>
+
 </html>
