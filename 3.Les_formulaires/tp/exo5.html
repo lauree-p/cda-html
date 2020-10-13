@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 5</title>
+</head>
+
+<body>
+    <style>
+        legend {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+        }
+
+        input {
+            margin-bottom: 15px;
+        }
+
+        span {
+            display: flex;
+            align-items: center;
+        }
+
+        .span2 {
+            align-self: flex-end;
+            margin-left: 4px;
+        }
+
+        input {
+            padding: 5px;
+        }
+
+        input[type="checkbox"]:not(:checked),
+        input[type="checkbox"]:checked {
+            border-radius: 10px;
+            background-color: blueviolet;
+        }
+
+    </style>
+    <h1>Exo 5</h1>
+
+    <form>
+        <fieldset>
+            <legend>Formulaire d'inscription</legend>
+            <label for="name">Nom</label>
+            <input type="text" name="name" placeholder="saisir votre nom">
+            <br>
+            <label for="firstname">Prénom</label>
+            <input type="text" name="firstname" placeholder="saisir votre prénom">
+            <br>
+            <label for="mail">E-mail</label>
+            <input type="email" name="mail" placeholder="saisir votre Email">
+            <br>
+            <label for="sexe">Sexe</label>
+            Masculin<input type="radio" name="sexe" checked>
+            Féminin<input type="radio" name="sexe">
+            <br>
+            <label for="file">Photo</label>
+            <input type="file" accept=".jpeg,.png" name="file">
+            <br>
+            <label for="country">Pays</label>
+            <select name="country">
+                <option selected>FRANCE</option>
+                <option>ANGLETERRE</option>
+                <option>ALLEMAGNE</option>
+                <option>ITALIE</option>
+                <option>SUISSE</option>
+                <option>ESPAGNE</option>
+            </select>
+            <br>
+            <br>
+            <span>
+                <label for="langage">Les langages préférés</label>
+                <select name="langage" size="4" multiple style="width: 60px;">
+                    <option value="France">Java</option>
+                    <option value="Espagne">C</option>
+                    <option value="France">C++</option>
+                    <option value="Espagne">PHP</option>
+                    <option value="France">Javascript</option>
+                    <option value="Espagne">C#</option>
+                </select>
+                <span class="span2">(Pour faire plusieurs choix maintenir la touche CTRL enfoncée)</span>
+            </span>
+            <br>
+            <span>
+                <label>Domaines d'activités</label>
+                <input type="checkbox" name="developement" id="dev">
+                <label for="dev">Développement</label>
+                <input type="checkbox" name="gestionDeProjet" id="gest">
+                <label for="gest">Gestion Projet</label>
+                <input type="checkbox" name="baseDeDonnees" id="bsd">
+                <label for="bsd">Base de données</label>
+                <br>
+                <input type="submit">
+                <input type="reset" value="Annuler">
+            </span>
+        </fieldset>
+    </form>
+</body>
+
+</html>

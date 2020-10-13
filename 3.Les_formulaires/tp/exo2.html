@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 2</title>
+</head>
+
+<body>
+    <style>
+        .slider::-webkit-slider-thumb {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+        }
+
+        .slider {
+            -webkit-appearance: none;
+            background: #8a8a8a;
+            align-self: center;
+            height: 4px;
+            border-radius: 50px;
+        }
+
+        .slider::-moz-range-thumb {
+            width: 15px;
+            height: 15px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+    </style>
+    <h1>Exo 2</h1>
+
+    <form>
+        <fieldset style="width: max-content;">
+            <legend>Client</legend>
+            <label for="name&firstname">Nom et prénom</label>
+            <input type="input" name="name&firstname" placeholder="Nom et prénom" readonly>
+            <br>
+            <label for="adress">Adresse</label>
+            <input type="input" name="adress">
+            <br>
+            <label for="cp" pattern="[0-5]">Code Postal:</label>
+            <input type="input" name="cp">
+            <br>
+            <label for="pays">Pays:</label>
+            <input type="input" name="pays" value="France">
+        </fieldset>
+    </form>
+    <br>
+
+    <form>
+        <fieldset style="width: max-content;">
+            <label for="model">Modèle:</label>
+            <input type="input" name="modele" value="Road 66">
+            <br>
+            <label for="size">Taille:</label>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" name="size">
+            <p>S M L XL</p>
+            <br>
+            <label for="quantity">Quantité:</label>
+            <select name="quantity" style="width: 130px;">
+                <option selected>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select> 
+            <br>
+            <input type="submit" value="Commander">
+            <input type="submit" value="Recommencer">
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>

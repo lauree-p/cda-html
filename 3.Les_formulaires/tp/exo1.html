@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 1</title>
+</head>
+
+<body>
+    <h1>Exo 1 : état civil</h1>
+
+    <form>
+        <label for="sexe">Sexe:</label>
+        <input type="radio" name="sexe">Masculin
+        <input type="radio" name="sexe">Féminin
+        <br>
+        <label for="name">Nom:</label>
+        <input type="text" name="name">
+        <br>
+        <label for="firstname">Prénom:</label>
+        <input type="text" name="firstname">
+        <br>
+        <label for="pseudo">Pseudo:</label>
+        <input type="text" name="pseudo">
+        <br>
+        <label for="pseudo">Age:</label>
+        <select name="age">
+            <option selected style="background-color: grey;"></option>
+            <option>Moins de 20 ans</option>
+            <option>De 20 à 40 ans</option>
+            <option>De 40 à 60 ans</option>
+            <option>Plus de 60 ans</option>
+        </select>
+        <br>
+        <label for="password">Mot de passe:</label>
+        <input type="password" name="firstname">
+        <br>
+        <label for="textarea">Commentaires</label>
+        <textarea rows="5" cols="16"></textarea>
+        <br>
+        <label for="pays">Pays</label>
+        <select name="pays" size="2" multiple>
+            <option value="France">France</option>
+            <option value="Espagne">Espagne</option>
+        </select>
+        <label for="pays">Souhaitez vous être contacté par email</label><input type="radio" name="contactMail">oui<input
+            type="radio" name="contactMail">non
+        <br>
+        <input type="submit" value="Validez">
+    </form>
+
+</body>
+
+</html>

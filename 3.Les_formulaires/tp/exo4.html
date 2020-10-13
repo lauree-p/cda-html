@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 4</title>
+</head>
+
+<body>
+    <style>
+        form {
+            width: fit-content;
+        }
+        div {
+            margin-bottom: 10px;
+        }
+        input:valid[type="email"], input:valid[type="password"] {
+            background-color: green;
+            
+        }
+        input:valid[type="email"]::placeholder, input:valid[type="password"]::placeholder {
+            color: aliceblue;
+        }
+        
+        input:invalid[type="email"],input:invalid[type="password"] {
+            background-color: red;
+        }
+
+        input:invalid[type="email"]::placeholder, input:invalid[type="password"]::placeholder {
+            color: aliceblue;
+        }
+    </style>
+
+    <h1>Exo 4</h1>
+
+    <form>
+        <fieldset>
+            <legend>Authentification</legend>
+            <div>
+                <label for="email">Login : </label>
+                <input type="email" name="email" pattern="[A-Za-z0-9]+@needemand.com" placeholder="saisir votre login" required>
+
+                <label for="password">Mot de passe :</label>
+                <input type="password" name="password" minlength="6" pattern="(?=.*\d).{6,8}" placeholder="saisir votre mot de passe" required>
+            </div>
+            <input type="submit" value="Envoyer">
+            <input type="submit" value="Effacer">
+        </fieldset>
+    </form>
+</body>
+
+</html>
